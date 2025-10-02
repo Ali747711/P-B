@@ -1,0 +1,71 @@
+* [33mc168099[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m fix: modify getProduct business logic
+* [33m2a624f4[m feat: create view schema and sevice models
+* [33mc9b7755[m feat: develop getProduct
+* [33m78267ea[m feat: develop getProducts rest Api
+* [33meeaf203[m feat: create getRestaurant rest API and MiTask X
+* [33m99f8ddf[m feat: develop getTopUsers rest Api
+* [33m7dbebba[m feat: develop updateMember business logic
+* [33mf682f6e[m feat: Task W
+* [33mfed2d1f[m fix: modify getMemberDetail business logic
+* [33m3c75cca[m feat: create middleware methods and develop  logout process
+* [33m6be6907[m feat: develop verufy authentication user cretensions
+* [33m7a077b6[m feat: develop authentication via tokens with cookies
+* [33m35a3ec3[m feat: develop creation via jwt
+* [33m95608dc[m feat: Task V
+* [33mda65e59[m feat: Task U
+* [33m98c7746[m Fix: Mitask T
+* [33md885a89[m feat: Task S
+* [33m595d652[m feat: Task Q
+* [33m9fd02cc[m fix: Admin project refactoring
+* [33m452a46d[m feat: Task P
+* [33m7ca1ae5[m fix: modify SPA login API process
+* [33m64cbab6[m feat: frontend chosen user update logic develop
+* [33m9edc519[m fix: users page render real data
+* [33mde3a5d3[m feat: update chosen product frontend logic
+* [33ma769086[m feat: create new product frontend logic develop
+* [33m7c120b8[m fix: modify products page based on products data
+* [33mf1e5c4f[m feat: Singup process frontend validation and Task O
+* [33m65bf8be[m fea: signup process frontend validation
+* [33mad6b679[m fix:modify admin header
+* [33m5f8fb36[m fix: Task N
+* [33m5063750[m fix:admin frontend publishing
+* [33m7b1aab1[m feat: develop updateChosenUser api
+* [33mf11ab8c[m feat: ddevelop getUsers business logic
+* [33m5bcc697[m fix: getAllProducts api and passing data into ejs, TASK M
+* [33mbf883b0[m fix:modify updateChosenProduct business logic
+* [33m14c1187[m feat: createNewProduct business logic by restaurant member
+* [33m877b8ec[m fix: modify restaurant controller processSignup and processLogin
+* [33m05c9bac[m feat: configure product Schema model, Task L
+* [33m01eb147[m feat: upload files to server via multer
+* [33m1daa328[m feat: locals variable integration
+* [33mb744074[m feat: create product controller and product routing apis
+* [33m8f3894f[m  feat: Task K
+* [33m1911770[m feat: develop logout process
+* [33m46e194d[m feat: create checkAuthSession Api
+* [33m258e6a3[m fix: create sessions on login and signup process
+* [33ma0687ea[m feat: integrate middleware sessions
+* [33m6df2dad[m feat: develop admin frontend pages and integrate header and footer
+* [33m66e2ce0[m feat: frontend related css, js and image creataion
+* [33mb589f68[m fix: organize SPA&SSR business logic
+* [33m3ac9072[m feat: Task I
+* [33m4625fb6[m fix:modify restaurant login and sign up process
+* [33m3f455c1[m feat: develop restaurant login
+* [33mf0b66af[m feat: develop singup process
+* [33m45309f9[m fix: router admin naming  according to project  standarts
+* [33m1518e40[m feat: create restaurant member related router get and post endpoints
+* [33m212f743[m feat: create project standarts
+* [33m569b24e[m feat: create project standarts
+* [33mb4144b4[m feat: Train task
+* [33m3dd19fe[m feat: Train task
+* [33m1f082dc[m feat: develop member schema model
+* [33m2605b3d[m feat: member service model integration
+* [33mbab719f[m fix: modify routing system and controllers
+* [33m549ced7[m feat: create routing and member controller
+* [33m2e360c8[m feat: Task H
+* [33m077c0ac[m feat: express integrations
+* [33m0a4100c[m feat: connected mongodb via mongoose
+* [33m636307f[m feat:train modified
+* [33m645f368[m feat: integration of evrironmental variables
+* [33m031710e[m feat: Train file
+* [33m4e72040[m feat: Train file
+* [33m86843fd[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m feat: Initial Setup
