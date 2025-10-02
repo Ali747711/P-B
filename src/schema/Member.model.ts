@@ -19,6 +19,7 @@ const memberSchema = new Schema ({
     },
 
     memberNick: {
+        
         type: String,
         index: {unique: true, sparse: true  },
         required: true,
