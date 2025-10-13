@@ -1,4 +1,4 @@
-<%- include('includes/header') %>
+<!-- <%- include('includes/header') %>
 
 <link rel="stylesheet" type="text/css" href="/css/login.css" />
 
@@ -32,6 +32,53 @@
             name="memberPassword"
             class="member-password"
             placeholder="Password"
+            value=""
+            required
+          />
+        </div>
+      </div>
+      <button class="login-btn btn" name="login" type="submit">Login</button>
+    </div>
+  </form>
+</body>
+
+<%- include('includes/footer') %> -->
+
+
+<%- include('includes/header') %>
+
+<link rel="stylesheet" type="text/css" href="/css/login.css" />
+
+<body>
+  <form class="login-container" action="/admin/login" METHOD="POST">
+    <div class="login-frame">
+      <div class="login-top">
+        <span>Enter</span>
+        <div>Go back <a href="/admin" style="color: #00d4ff">Home</a></div>
+        <p>
+          Not registered yet?
+          <a href="/admin/signup" style="color: #00d4ff">Signup</a>
+        </p>
+      </div>
+      <div class="login-input-frame">
+        <div class="login-input-container">
+          <label>Username *</label>
+          <input
+            type="text"
+            name="memberNick"
+            class="member-nick"
+            placeholder="Enter your username"
+            value=""
+            required
+          />
+        </div>
+        <div class="login-input-container">
+          <label>Password *</label>
+          <input
+            type="password"
+            name="memberPassword"
+            class="member-password"
+            placeholder="Enter your password"
             value=""
             required
           />
