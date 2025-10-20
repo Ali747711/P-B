@@ -18,81 +18,123 @@ function fitElementToParent(el, padding) {
   window.addEventListener("resize", resize);
 }
 
+
+//  KALEIDOSCOPE ANIMATION
 (function () {
-  const sphereEl = document.querySelector(".sphere-animation"),
-   spherePathEls = sphereEl.querySelectorAll(".sphere path"),
-   pathLength = spherePathEls.length,
-   animations = [];
+  const kaleidoscopeEl = document.querySelector('.kaleidoscope-animation');
+  
+  if (!kaleidoscopeEl) return;
 
-  fitElementToParent(sphereEl);
-
-  const breathAnimation = anime({
-    begin: function () {
-      for (let i = 0; i < pathLength; i++) {
-        animations.push(
-          anime({
-            targets: spherePathEls[i],
-            stroke: {
-              value: ["rgba(255,75,75,1)", "rgba(80,80,80,.35)"],
-              duration: 500,
-            },
-            translateX: [2, -4],
-            translateY: [2, -4],
-            easing: "easeOutQuad",
-            autoplay: false,
-          })
-        );
-      }
-    },
-    update: function (ins) {
-      animations.forEach(function (animation, i) {
-        let percent = (1 - Math.sin(i * 0.35 + 0.0022 * ins.currentTime)) / 2;
-        animation.seek(animation.duration * percent);
-      });
-    },
-    duration: Infinity,
-    autoplay: false,
+  // Animate circles - pulsing and color change
+  anime({
+    targets: '.circle',
+    scale: [
+      {value: 1},
+      {value: 1.3},
+      {value: 1}
+    ],
+    duration: 3000,
+    delay: anime.stagger(300),
+    easing: 'easeInOutQuad',
+    loop: true
   });
 
-  const introAnimation = anime
-    .timeline({
-      autoplay: false,
-    })
-    .add(
-      {
-        targets: spherePathEls,
-        strokeDashoffset: {
-          value: [anime.setDashoffset, 0],
-          duration: 3900,
-          easing: "easeInOutCirc",
-          delay: anime.stagger(190, { direction: "reverse" }),
-        },
-        duration: 2000,
-        delay: anime.stagger(60, { direction: "reverse" }),
-        easing: "linear",
-      },
-      0
-    );
+  // Animate squares - rotation
+  anime({
+    targets: '.square-1',
+    rotate: 360,
+    duration: 4000,
+    easing: 'linear',
+    loop: true
+  });
 
-  const shadowAnimation = anime(
-    {
-      targets: "#sphereGradient",
-      x1: "25%",
-      x2: "25%",
-      y1: "0%",
-      y2: "75%",
-      duration: 30000,
-      easing: "easeOutQuint",
-      autoplay: false,
-    },
-    0
-  );
+  anime({
+    targets: '.square-2',
+    rotate: -360,
+    duration: 5000,
+    easing: 'linear',
+    loop: true
+  });
 
-  function init() {
-    introAnimation.play();
-    breathAnimation.play();
-    shadowAnimation.play();
-  }
+  anime({
+    targets: '.square-3',
+    rotate: 360,
+    duration: 6000,
+    easing: 'linear',
+    loop: true
+  });
 
-  init();
+  // Animate triangles - rotation opposite direction
+  anime({
+    targets: '.triangle-1',
+    rotate: -360,
+    duration: 5000,
+    easing: 'linear',
+    loop: true
+  });
+
+  anime({
+    targets: '.triangle-2',
+    rotate: 360,
+    duration: 6000,
+    easing: 'linear',
+    loop: true
+  });
+
+  anime({
+    targets: '.triangle-3',
+    rotate: -360,
+    duration: 7000,
+    easing: 'linear',
+    loop: true
+  });
+
+  // Animate star points - orbital rotation
+  anime({
+    targets: '.star-point',
+    rotate: 360,
+    duration: 8000,
+    delay: anime.stagger(100),
+    easing: 'linear',
+    loop: true
+  });
+
+  // Color cycling for circles
+  anime({
+    targets: '.circle-1',
+    opacity: [0.7, 0.3, 0.7],
+    duration: 2000,
+    easing: 'easeInOutSine',
+    loop: true
+  });
+
+  anime({
+    targets: '.circle-2',
+    opacity: [0.7, 0.3, 0.7],
+    duration: 2500,
+    easing: 'easeInOutSine',
+    loop: true
+  });
+
+  anime({
+    targets: '.circle-3',
+    opacity: [0.7, 0.3, 0.7],
+    duration: 3000,
+    easing: 'easeInOutSine',
+    loop: true
+  });
+
+  // Star points pulsing
+  anime({
+    targets: '.star-point',
+    scale: [
+      {value: 1},
+      {value: 1.5},
+      {value: 1}
+    ],
+    duration: 1500,
+    delay: anime.stagger(200, {from: 'center'}),
+    easing: 'easeInOutQuad',
+    loop: true
+  });
 })();
